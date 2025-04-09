@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light text-center py-5">
+    <div class="container">
+        <h1 class="mb-4 text-primary">Piedra, Papel o Tijera</h1>
+        <div class="row mb-4">
+            <div class="col-6">
+                <h3 class="text-danger">Máquina</h3>
+                <p id="puntaje-maquina" class="fs-1 fw-bold">0</p>
+            </div>
+            <div class="col-6">
+                <h3 class="text-success">Jugador</h3>
+                <p id="puntaje-jugador" class="fs-1 fw-bold">0</p>
+            </div>
+        </div>
+        <div id="juego" class="d-flex justify-content-center gap-3 mb-4">
+            <button id="piedra" class="btn btn-primary btn-lg">Piedra</button>
+            <button id="papel" class="btn btn-success btn-lg">Papel</button>
+            <button id="tijera" class="btn btn-danger btn-lg">Tijera</button>
+        </div>
+        <div id="resultado" class="alert alert-info fs-4" role="alert"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/juego.js"></script>
+</body>
+</html>
